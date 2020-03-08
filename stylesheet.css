@@ -1,0 +1,81 @@
+body{
+    font-family: 'Lobster';
+    max-width:400px;
+	margin:auto;
+	padding-top:30px;
+}
+.background-image{
+    background: url(Images/nature-background.jpg);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    background-size: cover;
+    -webkit-filter: blur(2px);
+}
+.container{
+    max-width: 100%;
+    text-align: left;
+    z-index: 1000;
+    position: relative;
+    padding: 0px 17px 17px 17px;
+	border:2px solid black;
+}
+#name, #email, #gender, #phone, #date, #password, #password1{
+    font-size: 14px;
+    border-radius: 5px;
+}
+.btn-default{
+    size: 30px;
+}
+h1{
+    text-align: center;
+}
+
+.col-md-2{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#submit{
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-right: 0px;
+    padding: 5px;
+    font-size: 18px;
+    width: 100px;
+    height: 35px;
+    color: white;
+    background-color: #383b397a;
+    border: 0.5px solid #234930;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#submit:hover{
+    color: black;
+    background-color: #1f9c497a;
+    border: 0.5px solid #363837;
+}
+#custom-button{
+    padding: 5px;
+    color: white;
+    background-color: #3a4442;
+    border: 0.5px solid #000000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#custom-button:hover{
+    background-color: #00b28f;
+}
+#custom-text{
+    border: 20px;
+    margin-left: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #424040;
+}
+hr{
+    position: relative;
+}
