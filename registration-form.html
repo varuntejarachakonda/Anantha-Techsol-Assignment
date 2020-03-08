@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Candidate Registration Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
+        <link rel="stylesheet" href="stylesheet.css"/>
+    </head>
+    <body>
+        <div class="background-image"></div>
+            <div class="container">
+                    <h1>Candidate Registration Form<hr/></h1>
+                    <script type="text/javascript">var submitted=false;</script>
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='registration-form.html';}"></iframe>
+                    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScghuPERu3Df6Hi_vS_OFE_SOVOZFVR1bnbEZqS5xAqtoL6Ig/formResponse" method="post" target="hidden_iframe" name="forms"  onsubmit="submitted=true">
+                        <div class="form-group">
+                            <label class="control-label col-md-2" for="name">Full Name:</label>
+                            <span class="col-md-2">
+                                <input type="text" name="entry.1840869041" id="name" class="form-control" placeholder="Enter full name..." required/>
+                            </span>
+                        </div><br>
+                        <div class="form-group">
+                            <label class="control-label col-md-2" for="gender">Gender:</label>
+                            <span class="col-md-2">
+                                <label class="control-label col-md-2" for="male">Male:</label>
+                                <input type="radio"  id="messages" name="entry.1217572723" class="form-control"/>
+                                <label class="control-label col-md-2" for="female">Female:</label>
+                                <input type="radio"  id="messages" name="entry.1217572723" class="form-control"/>
+                            </span>
+                        </div><br>
+                        <div class="form-group">
+                            <label class="control-label col-md-2" for="email">Email ID:</label>
+                            <span class="col-md-2">
+                                <input type="email" name="entry.1976855214" id="email" class="form-control" placeholder="Enter email id..." required/>
+                            </span>
+                        </div><br>
+                        <div class="form-group">
+                            <label class="control-label col-md-2" for="phone">Phone Number:</label>
+                            <span class="col-md-2">
+                                <input type="phone" name="entry.1371282205" id="phone" class="form-control" placeholder="Enter modile number..." required/>
+                            </span>
+                        </div><br>
+                        <div class="form-group">
+                            <label class="control-label col-md-2" for="password">Password:</label>
+                            <span class="col-md-2">
+                                <input type="password" name="entry.1992002052" id="password" class="form-control" required/>
+                            </span>
+                        </div><br>
+                        <div class="form-group">
+                            <label class="control-label col-md-2" for="password">Confirm Password:</label>
+                            <span class="col-md-2">
+                                <input type="password" name="entry.1647171093" id="password1" class="form-control" required/>
+                            </span>
+                        </div><br>
+                        <div class="form-group">
+                            <label class="control-label col-md-2">Applying For Position:</label>
+                            <span  class="col-md-2">
+                            <select id="position" name="entry.1176574033" required>
+                            <option value="0">--Choose the position--</option>
+                            <option value="">Web Developer</option>
+                            <option value="">Front-End Developer</option>
+                            <option value="">Data Base Administrator</option>
+                            <option value="">Back-End Developer</option>
+                            <option value="">Data Scientist</option>
+                            <option value="">System Engineer</option>
+                            <option value="">Manual/Automation Testing</option>
+                            </select>
+                            </span>
+                        </div><br>
+                        <div class="form-group">
+                        <label class="control-label col-md-2"></label>
+                        <input type="file" name="entry.131025902" id="real-file" hidden="hidden" required/>
+                        <button type="button" id="custom-button">Upload Resume</button>
+                        <span id="custom-text">No file chosen, yet.</span>
+                        </div><br>
+                        <div class="form-group">
+                            <div class="col-md-10 col-md-offset-2">
+                                <input type="submit" value="Click Here" id="submit"/>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+    </body>
+    <footer>
+        <script src="registration-form.js"></script>
+    </footer>
+</html>
